@@ -8,100 +8,368 @@
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
     <style type="text/css">
 
-      .item_table_div {
+      body {
+        /* background-color: #F3FFE8; */
       }
 
-      .item_table {
-        background-color: rgba(250, 235, 215, 0.788);
-        width: 75%;
-        margin: 20px auto;
+      header {
+        border-bottom: 2px groove black ;
       }
 
-      .item_title {
-        width: 25%;
-        text-align: center;
-      }
-      
-      .item_content {
-        margin-right: 10%;
-        margin-left: 20%;
-      }
-
-      .text_align_center {
-          text-align: center;
-      }
-
-      .align_center {
+      .nav-container {
+        width: 90%;
         margin: auto;
       }
 
-      img {
-        width: 150px;
+      .navbar {
+        list-style-type: none;
+        font-size: 20px;
+      }
+
+      li.navItem {
+        display: inline;
+        border-right: 1px solid gray;
+        margin-left: 2%;
+        padding-right: 2%;
+      }
+
+      .item {
+        width: 70%;
+        margin: 20px auto 40px;
+        display: table;
+      }
+
+      .item-image {
+        width: 65%;
+        float: left;
+      }
+
+      .item-image img {
+        width: 100%;
+      }
+
+      .item-description {
+        width: 30%;
+        float: left;
+        margin-left: 20px;
+      }
+
+      .company-name {
+        text-align: right;
+        width: 100%;
+      }
+
+      .main_title {
+        width: 72%;
+        margin: 5px auto 5px;
+        border-bottom: 1px solid rgb(236, 234, 234);
+      }
+
+      h1 {
+        margin-bottom: 5px;
+      }
+
+      h2 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
+      p {
+        margin-bottom: 0px;
+      }
+
+      #icon {
+        display: inline;
+        margin-right: 5%;
+      }
+
+      #icon img{
+        width: 30px;
+        height: 30px;
+        margin-right: 5px;
       }
 
     </style>
 </head>
 
 <body>
-<div class="item_table_div">
-  <table class="item_table">
-    </tr>
-      <td class="item_title"><h3>名稱</h3></td>
-      <td class="item_title"><h3>廠商</h3></td>
-      <td class="item_title"><h3>描述</h3></td>
-      <td class="item_title"><h3>圖片</h3></td>
-    </tr>
-    <tr>
-      <td><div class="text_align_center">卡方管螺紋連接防滴</div></td>
-      <td><div class="text_align_center">青禾植保</div></td>
-      <td><div class="item_content">
-        卡管
-        <ul>
-          <li>25 mm</li>
-        </ul>
-        螺紋口：
-        <ul>
-          <li>內徑：8 mm</li>
-          <li>外徑：14 mm</li>
-        </ul>
-      </div></td>
-      <td>
-        <div class="item_content">
-          <img src="imgs/low_pressure/青禾植保/卡方管螺紋連接防滴/1.jpg" />
-        </div>
-      </td>
-    </tr>
-  </table>
-</div>
-<div class="item_table_div align_center">
-        <table class="item_table">
-          </tr>
-          <td class="item_title"><h3>名稱</h3></td>
-          <td class="item_title"><h3>廠商</h3></td>
-          <td class="item_title"><h3>描述</h3></td>
-          <td class="item_title"><h3>圖片</h3></td>
-          </tr>
-          <tr>
-            <td><div class="text_align_center">卡方管螺紋連接防滴</div></td>
-            <td><div class="text_align_center">青禾植保</div></td>
-            <td><div class="item_content">
-              卡管
-              <ul>
-                <li>25 mm</li>
-              </ul>
-              螺紋口：
-              <ul>
-                <li>內徑：8 mm</li>
-                <li>外徑：14 mm</li>
-              </ul>
-            </div></td>
-            <td>
-              <div class="item_content">
-                <img src="imgs/low_pressure/青禾植保/卡方管螺紋連接防滴/1.jpg" />
-              </div>
-            </td>
-          </tr>
-        </table>
-      </div>
+  <header>
+    <div class="nav-container">
+      <ul class="navbar">
+        <li id="icon"><img src="imgs/icon.png" />無人機噴頭資料庫</li>
+        <li class="navItem">低壓噴頭</li>
+        <li class="navItem">高壓噴頭</li>
+        <li class="navItem">離心噴頭</li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- 低壓噴頭 -->
+  <div class="main_title">
+    <h1>低壓噴頭</h1>
+  </div>
+  <!---- 青禾植保 ---->
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/青禾植保/卡方管螺紋連接防滴/1.jpg" />
+    </div>
+    <div class="item-description">
+      <h2>卡方管螺紋連接防滴</h2>
+      <p class="company-name">廠商：青禾植保</p>
+      <h3>卡管</h3>
+      <ul>
+        <li>25 mm</li>
+      </ul>
+      <h3>螺紋口</h3>
+      <ul>
+        <li>內徑：8 mm</li>
+        <li>外徑：14 mm</li>
+      </ul>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/青禾植保/卡圓管螺紋連接防滴/1.jpg" />
+    </div>
+    <div class="item-description">
+      <h2>卡圓管螺紋連接防滴</h2>
+      <p class="company-name">廠商：青禾植保</p>
+      <h3>卡管</h3>
+      <ul>
+        <li>大：25 mm</li>
+        <li>小：20 mm</li>
+      </ul>
+      <h3>螺紋口</h3>
+      <ul>
+        <li>內徑：8 mm</li>
+        <li>外徑：14 mm</li>
+      </ul>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/青禾植保/防滴內走水/1.jpg" />
+    </div>
+    <div class="item-description">
+      <h2>防滴內走水</h2>
+      <p class="company-name">廠商：青禾植保</p>
+      <h3>卡管</h3>
+      <ul>
+        <li>大：32 mm</li>
+        <li>小：20.5 mm</li>
+      </ul>
+      <h3>進水口外徑</h3>
+      <ul>
+        <li>9.6 mm</li>
+      </ul>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/青禾植保/內走水/1.jpg" />
+    </div>
+    <div class="item-description">
+      <h2>內走水</h2>
+      <p class="company-name">廠商：青禾植保</p>
+      <h3>卡管</h3>
+      <ul>
+        <li>20 mm</li>
+      </ul>
+      <h3>進水口外徑</h3>
+      <ul>
+        <li>8 mm</li>
+      </ul>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/青禾植保/插管不防滴/1.jpg" />
+    </div>
+    <div class="item-description">
+      <h2>不防滴插管</h2>
+      <p class="company-name">廠商：青禾植保</p>
+      <h3>鐵夾</h3>
+      <ul>
+        <li>25 mm</li>
+      </ul>
+      <h3>插管口</h3>
+      <ul>
+        <li>內徑：8 mm</li>
+        <li>外徑：14 mm</li>
+      </ul>
+    </div>
+  </div>
+
+  <!---- 經緯航太 ---->
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/經緯航太/a/1.JPG" />
+    </div>
+    <div class="item-description">
+      <h2>經緯航太 a</h2>
+      <p class="company-name">廠商：經緯航太</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/經緯航太/b/1.JPG" />
+    </div>
+    <div class="item-description">
+      <h2>經緯航太 b</h2>
+      <p class="company-name">廠商：經緯航太</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/經緯航太/c/1.JPG" />
+    </div>
+    <div class="item-description">
+      <h2>經緯航太 c</h2>
+      <p class="company-name">廠商：經緯航太</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/經緯航太/d/1.JPG" />
+    </div>
+    <div class="item-description">
+      <h2>經緯航太 d</h2>
+      <p class="company-name">廠商：經緯航太</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/經緯航太/e/1.JPG" />
+    </div>
+    <div class="item-description">
+      <h2>經緯航太 e</h2>
+      <p class="company-name">廠商：經緯航太</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/經緯航太/f/1.JPG" />
+    </div>
+    <div class="item-description">
+      <h2>經緯航太 f</h2>
+      <p class="company-name">廠商：經緯航太</p>
+    </div>
+  </div>
+
+  <!---- ARAG ---->
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/ARAG/陶瓷空心錐/1.jpg" />
+    </div>
+    <div class="item-description">
+      <h2>陶瓷空心錐</h2>
+      <p class="company-name">廠商：ARAG</p>
+    </div>
+  </div>
+
+  <!---- LECHLER ---->
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/LECHLER/普通噴嘴/1.jpg" />
+    </div>
+    <div class="item-description">
+      <h2>普通噴嘴</h2>
+      <p class="company-name">廠商：LECHLER</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/LECHLER/標準扇形/1.jpg" />
+    </div>
+    <div class="item-description">
+      <h2>標準扇形</h2>
+      <p class="company-name">廠商：LECHLER</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/LECHLER/陶瓷空心錐/1.jpg" />
+    </div>
+    <div class="item-description">
+      <h2>陶瓷空心錐</h2>
+      <p class="company-name">廠商：LECHLER</p>
+    </div>
+  </div>
+  <!---- TeeJet ---->
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/TeeJet/系統噴霧/1.JPG" />
+    </div>
+    <div class="item-description">
+      <h2>系統噴霧</h2>
+      <p class="company-name">廠商：TeeJet</p>
+    </div>
+  </div>
+  <!---- 其他 ---->
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/其他/禾斗雲/1.jpg" />
+    </div>
+    <div class="item-description">
+      <h2>禾斗雲</h2>
+      <p class="company-name">廠商：其他</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/low_pressure/其他/進口-扇形-銅/1.jpg" />
+    </div>
+    <div class="item-description">
+      <h2>進口-扇形-銅</h2>
+      <p class="company-name">廠商：其他</p>
+    </div>
+  </div>
+
+  <!-- 高壓噴頭 -->
+  <div class="main_title">
+    <h1>高壓噴頭</h1>
+  </div>
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/high_pressure/東台/1.JPG" />
+    </div>
+    <div class="item-description">
+      <h2>噴頭</h2>
+      <p class="company-name">廠商：東台</p>
+    </div>
+  </div>
+
+  <!-- 離心噴頭 -->
+  <div class="main_title">
+    <h1>離心噴頭</h1>
+  </div>
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/centrifuge/動控科技/有刷離心噴頭/1.JPG" />
+    </div>
+    <div class="item-description">
+      <h2>有刷離心噴頭</h2>
+      <p class="company-name">廠商：動控科技</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/centrifuge/其他/有刷電動式/新版/1.jpg" />
+    </div>
+    <div class="item-description">
+      <h2>有刷電動式（新版）</h2>
+      <p class="company-name">廠商：其他</p>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-image">
+      <img src="imgs/centrifuge/其他/有刷電動式/舊版/1.jpg" />
+    </div>
+    <div class="item-description">
+      <h2>有刷電動式（舊版）</h2>
+      <p class="company-name">廠商：其他</p>
+    </div>
+  </div>
+
 </body>
 </html>
