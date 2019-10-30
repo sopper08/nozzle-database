@@ -35,7 +35,7 @@
 
       .item {
         width: 70%;
-        margin: 20px auto 40px;
+        margin: 100px auto 40px;
         display: table;
       }
 
@@ -61,7 +61,7 @@
 
       .main_title {
         width: 72%;
-        margin: 5px auto 5px;
+        margin: 100px auto 5px;
         border-bottom: 1px solid rgb(236, 234, 234);
       }
 
@@ -89,26 +89,142 @@
         margin-right: 5px;
       }
 
+      @import url(https://fonts.googleapis.com/css?family=Lato);
+
+      *, *:before, *:after{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+      }
+
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
+        border: 1px solid rgba(0,0,0,.1);
+        padding: 0;
+        margin: 0;
+      }
+      
+      nav ul {
+        list-style: none;
+        position: relative;
+        float: right;
+        margin-right: 100px;
+        display: inline-table;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav ul li{
+        float: left;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        padding: 0;
+        margin: 0;
+      }
+
+      nav ul li:hover{
+        background: rgba(0,0,0,.15);
+      }
+
+      nav ul li:hover > ul {
+        display: block;
+      }
+      
+      nav ul li {
+        float: left;
+        -webkit-transition: all .2s ease-in-out;
+        -moz-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        padding: 0;
+        margin: 0;
+      }
+      
+      nav ul li a {
+        display: block; 
+        padding: 15px 20px;
+        color: #222; 
+        font-size: .8em;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      nav ul ul {
+        display: none;
+        background: #fff;
+        position: absolute; 
+        top: 100%;
+        box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
+        border: 1px solid rgba(0,0,0,.1);
+        padding: 0;
+        margin: 0;
+      }
+
+      nav ul ul li {
+        float: none; 
+        position: relative;
+      }
+      
+      nav ul ul li a {
+        padding: 15px 15px; 
+        border-bottom: 1px solid rgba(0,0,0,.05);
+      }
+      
+      nav ul ul ul {
+        position: absolute; 
+        left: 100%; 
+        top:0;
+      }
+
+      footer {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+      }
     </style>
 </head>
 
 <body>
-  <header>
-    <div class="nav-container">
-      <ul class="navbar">
-        <li id="icon"><img src="imgs/icon.png" />無人機噴頭資料庫</li>
-        <li class="navItem">低壓噴頭</li>
-        <li class="navItem">高壓噴頭</li>
-        <li class="navItem">離心噴頭</li>
-      </ul>
-    </div>
-  </header>
+  <nav role='navigation'>
+    <ul>
+      <li><a href="#A">低壓噴頭</a>
+        <ul>
+          <li><a href="#A1">青禾植保</a></li>
+          <li><a href="#A2">經緯航太</a></li>
+          <li><a href="#A3">ARAG</a></li>
+          <li><a href="#A4">LECHLER</a></li>
+          <li><a href="#A5">TeeJet</a></li>
+          <li><a href="#A6">其他</a></li>
+        </ul>
+      </li>
+      <li><a href="#B">高壓噴頭</a>
+        <ul>
+          <li><a href="#B1">東台</a></li>
+        </ul>
+      </li>
+      <li><a href="#C">離心噴頭</a>
+        <ul>
+          <li><a href="#C1">動控科技</a></li>
+          <li><a href="#C2">其他</a></li>
+        </ul>
+      </li>
+      <li><a href="#Z">Contact us</a></li>
+    </ul>
+  </nav>
 
   <!-- 低壓噴頭 -->
-  <div class="main_title">
+  <div id="A" class="main_title">
     <h1>低壓噴頭</h1>
   </div>
   <!---- 青禾植保 ---->
+  <div id="A1"></div>
   <div class="item">
     <div class="item-image">
       <img src="imgs/low_pressure/青禾植保/卡方管螺紋連接防滴/1.jpg" />
@@ -201,6 +317,7 @@
   </div>
 
   <!---- 經緯航太 ---->
+  <div id="A2"></div>
   <div class="item">
     <div class="item-image">
       <img src="imgs/low_pressure/經緯航太/a/1.JPG" />
@@ -257,6 +374,7 @@
   </div>
 
   <!---- ARAG ---->
+  <div id="A3"></div>
   <div class="item">
     <div class="item-image">
       <img src="imgs/low_pressure/ARAG/陶瓷空心錐/1.jpg" />
@@ -268,6 +386,7 @@
   </div>
 
   <!---- LECHLER ---->
+  <div id="A4"></div>
   <div class="item">
     <div class="item-image">
       <img src="imgs/low_pressure/LECHLER/普通噴嘴/1.jpg" />
@@ -296,6 +415,7 @@
     </div>
   </div>
   <!---- TeeJet ---->
+  <div id="A5"></div>
   <div class="item">
     <div class="item-image">
       <img src="imgs/low_pressure/TeeJet/系統噴霧/1.JPG" />
@@ -306,6 +426,7 @@
     </div>
   </div>
   <!---- 其他 ---->
+  <div id="A6"></div>
   <div class="item">
     <div class="item-image">
       <img src="imgs/low_pressure/其他/禾斗雲/1.jpg" />
@@ -326,9 +447,10 @@
   </div>
 
   <!-- 高壓噴頭 -->
-  <div class="main_title">
+  <div id="B" class="main_title">
     <h1>高壓噴頭</h1>
   </div>
+  <div id="B1"></div>
   <div class="item">
     <div class="item-image">
       <img src="imgs/high_pressure/東台/1.JPG" />
@@ -340,9 +462,10 @@
   </div>
 
   <!-- 離心噴頭 -->
-  <div class="main_title">
+  <div id= "C" class="main_title">
     <h1>離心噴頭</h1>
   </div>
+  <div id="C1"></div>
   <div class="item">
     <div class="item-image">
       <img src="imgs/centrifuge/動控科技/有刷離心噴頭/1.JPG" />
@@ -352,6 +475,7 @@
       <p class="company-name">廠商：動控科技</p>
     </div>
   </div>
+  <div id="C2"></div>
   <div class="item">
     <div class="item-image">
       <img src="imgs/centrifuge/其他/有刷電動式/新版/1.jpg" />
@@ -370,6 +494,10 @@
       <p class="company-name">廠商：其他</p>
     </div>
   </div>
+  <footer id="Z">
+    <p>Posted by: NTU BME Lab301</p>
+    <p>Contact information: r06631026@ntu.edu.tw</p>
+  </footer>
 
 </body>
 </html>
