@@ -103,6 +103,21 @@
       }
 
     </style>
+    <script>
+        function showData(nozzleName, btnName) {
+          var x = document.getElementById(nozzleName);
+          var b = document.getElementById(btnName);
+          if (x.style.display === "none") {
+            b.style.background = 'gray';
+            x.style.display = "block";
+          } 
+          else 
+          {
+            b.style.background = '#e7e7e7';
+            x.style.display = "none";
+          }
+        }
+    </script>
 </head>
 
 <body>
@@ -135,6 +150,19 @@
       <p class="company-name">廠商：TeeJet</p>
     </div>
   </div>
+  <div class="item">
+      <div class="item-image">
+        <img src="" />
+        <button id="sector-show-data-btn" onclick="showData('sector-data-img', 'sector-show-data-btn')">詳細規格與數據</button>
+        <img id="sector-data-img" src="../../imgs/low_pressure/TeeJet/扇形噴嘴/data.jpg" style="display:none;" />
+      </div>
+      <div class="item-description">
+        <h2>扇形噴嘴</h2>
+        <p class="company-name">廠商：TeeJet</p>
+      </div>
+  </div>
+
+
 
 </body>
 </html>

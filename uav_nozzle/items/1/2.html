@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>低壓噴頭（LECHLER）</title>
+    <title>低壓噴頭（LiCheng）</title>
     <meta charset="UTF-8">
     <style type="text/css">
         body {
@@ -103,6 +103,21 @@
       }
 
     </style>
+    <script>
+        function showData(nozzleName, btnName) {
+          var x = document.getElementById(nozzleName);
+          var b = document.getElementById(btnName);
+          if (x.style.display === "none") {
+            b.style.background = 'gray';
+            x.style.display = "block";
+          } 
+          else 
+          {
+            b.style.background = '#e7e7e7';
+            x.style.display = "none";
+          }
+        }
+    </script>
 </head>
 
 <body>
@@ -122,38 +137,21 @@
 
   <!-- 低壓噴頭 -->
   <div id="A" class="main_title">
-    <h1>低壓噴頭（LECHLER）</h1>
+    <h1>低壓噴頭（LiCheng）</h1>
+  </div>
+  <div class="item">
+      <div class="item-image">
+        <img src="" />
+        <button id="licheng-show-data-btn" onclick="showData('licheng-data-img', 'licheng-show-data-btn')">詳細規格與數據</button>
+        <img id="licheng-data-img" src="../../imgs/low_pressure/LiCheng/data.jpg" style="display:none;" />
+      </div>
+      <div class="item-description">
+        <h2>扇形噴嘴</h2>
+        <p class="company-name">廠商：LiCheng</p>
+      </div>
   </div>
 
-  <!---- LECHLER ---->
-  <div id="A4"></div>
-  <div class="item">
-    <div class="item-image">
-      <img src="../../imgs/low_pressure/LECHLER/普通噴嘴/1.jpg" />
-    </div>
-    <div class="item-description">
-      <h2>普通噴嘴</h2>
-      <p class="company-name">廠商：LECHLER</p>
-    </div>
-  </div>
-  <div class="item">
-    <div class="item-image">
-      <img src="../../imgs/low_pressure/LECHLER/標準扇形/1.jpg" />
-    </div>
-    <div class="item-description">
-      <h2>標準扇形</h2>
-      <p class="company-name">廠商：LECHLER</p>
-    </div>
-  </div>
-  <div class="item">
-    <div class="item-image">
-      <img src="../../imgs/low_pressure/LECHLER/陶瓷空心錐/1.jpg" />
-    </div>
-    <div class="item-description">
-      <h2>陶瓷空心錐</h2>
-      <p class="company-name">廠商：LECHLER</p>
-    </div>
-  </div>
+
 
 </body>
 </html>
